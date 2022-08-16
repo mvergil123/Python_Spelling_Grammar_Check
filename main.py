@@ -1,4 +1,4 @@
-from json import parse_content_into_arr
+from content import parse_content_into_arr
 
 
 def main():
