@@ -1,6 +1,9 @@
+from json import parse_content_into_arr
+
 
 def main():
-    pass
+    print(parse_content_into_arr())
+
 
 
 if __name__ == "__main__":
