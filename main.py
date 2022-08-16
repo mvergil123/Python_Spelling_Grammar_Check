@@ -1,10 +1,9 @@
 from content import content_as_array
-
+from spelling import check_list_for_spelling
 
 def main():
     content_arr = content_as_array()
-    for word in content_arr:
-        print(word)
+    check_list_for_spelling(content_arr)
 
 
 
