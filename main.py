@@ -1,8 +1,12 @@
-from content import parse_content_into_arr
+from content import content_as_array
 
 
 def main():
-    print(parse_content_into_arr())
+    content_arr = content_as_array()
+    for word in content_arr:
+        print(word)
+
+
 
 
 

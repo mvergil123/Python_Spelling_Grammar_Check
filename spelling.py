@@ -12,7 +12,7 @@ def is_word_spelled_correct(word):
     else:
         return False
 
-def check_list_for_spellling(words):
+def check_list_for_spelling(words):
     for word in words:
         is_correct = is_word_spelled_correct(word)
         if is_correct:
