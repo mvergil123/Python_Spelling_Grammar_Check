@@ -18,7 +18,10 @@ def check_list_for_spelling(words):
         if is_correct:
             pass
         else:
-            raise Exception(f"word {word} is not spelled correct")
+            if word in ["recro", "aws", "rmf", "emass"]:
+                pass
+            else:
+                raise Exception(f"word {word} is not spelled correct")
 
 
 
