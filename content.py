@@ -26,13 +26,20 @@ def convert_array_to_single_array(arr):
         str = str.replace(")", "")
         str = str.replace("'s", "")
         str = str.replace("'", "")
+        str = str.replace(":", "")
 
         words = str.split(" ")
 
         for word in words:
             if len(word) > 0:
-                word = word.lower()
-                single_arr.append(word)
+                if "-" in word:
+                    dash_words = word.split("-")
+                    for dash_word in dash_words:
+                        dash_word = dash_word.lower()
+                        single_arr.append(dash_word)
+                else:
+                    word = word.lower()
+                    single_arr.append(word)
 
     return single_arr
 
